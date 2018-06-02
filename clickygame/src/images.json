@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Bear",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Grizzlybear55.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Tiger",
+    "image": "https://www.tigerfdn.com/wp-content/uploads/2015/05/ever-wonderred-what-do-tigers-eat-1024x743.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Lion",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/73/Lion_waiting_in_Namibia.jpg"                                     
+  },
+  {
+    "id": 4,
+    "name": "Gorilla",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Male_gorilla_in_SF_zoo.jpg/1200px-Male_gorilla_in_SF_zoo.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Elephant",
+    "image": "http://www.slate.com/content/dam/slate/articles/health_and_science/science/2017/11/171116_SCI_trophyElephant2.jpg.CROP.promo-xlarge2.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Rhino",
+    "image": "http://rhino911.com/wp-content/uploads/2017/05/what-is-a-rhino-and-how-many-types-are-there-900x564.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Crocodile",
+    "image": "https://www.capetribbeach.com.au/wp-content/uploads/2017/10/croc-1-1024x604.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Snake",
+    "image": "https://www.nationalgeographic.com/content/dam/animals/thumbs/rights-exempt/reptiles/g/green-anaconda_thumb.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Wild Boar",
+    "image": "https://c.pxhere.com/photos/19/e2/warthog_pig_wildpig_wildboar_boar_africa_wild_wildlife-804736.jpg!d"
+  },
+  {
+    "id": 10,
+    "name": "Cheetah",
+    "image": "http://www.sciencemag.org/sites/default/files/styles/inline__699w__no_aspect/public/cheetah_16x9.jpg?itok=JDH1lCrU"
+  },
+  {
+    "id": 11,
+    "name": "Hyena",
+    "image": "http://www.robertodemicheli.com/album_test/South%20Africa/Kruger%20Park/slides/IMG_1525P.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Zebra",
+    "image": "http://images.mentalfloss.com/sites/default/files/styles/insert_main_wide_image/public/multistriped%20zebra.jpg"
+  }
+]

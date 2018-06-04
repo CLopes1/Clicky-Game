@@ -10,23 +10,28 @@ console.log('images', images);
 // React Law #43: You pass things from component to component using props
 // React Law #85: Use curly braces to "inject" javascript (even in properties)
 
-class App extends Component {
 
-  state = {
-    clicked: [],
-    images,
-  }
+
+  class App extends Component {
+    state = {
+      clicked: [],
+      currebntScore: 0,
+      topscore: 0,
+      message: 'Click an image to begin',
+      images
+    };
+
+
 
   handleImageClick = (id) => {
-    console.log('id', id);
-
+    // console.log('id', id);
     this.shuffleImages();
 
     // TODO: check if id has been clicked (handle win/lose)
 
     // TODO: update score
 
-  }
+  } 
 
   shuffleImages = () => {
 
@@ -55,8 +60,11 @@ class App extends Component {
         <Header />
 
     
-          <Main images={this.state.images} onImageClick={this.handleImageClick} />
-
+        <Main 
+            images={this.state.images} 
+            onImageClick={this.handleImageClick} 
+            handleIncrement={this.handleIncrement}
+        />
 
         <Footer />
       </div>

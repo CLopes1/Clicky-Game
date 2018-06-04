@@ -14,7 +14,6 @@ class App extends Component {
 
   state = {
     clicked: [],
-    //images: images,
     images,
   }
 
@@ -26,22 +25,24 @@ class App extends Component {
     // TODO: check if id has been clicked (handle win/lose)
 
     // TODO: update score
-    
+
   }
 
   shuffleImages = () => {
 
     let a = this.state.images;
 
+    console.log("this.state.images is equal to" + a)
+
     // shuffle
     var j, x, i;
     for (i = a.length - 1; i > 0; i--) {
-        j = Math.floor(Math.random() * (i + 1));
-        x = a[i];
-        a[i] = a[j];
-        a[j] = x;
+      j = Math.floor(Math.random() * (i + 1));
+      x = a[i];
+      a[i] = a[j];
+      a[j] = x;
     }
-    
+
     this.setState({ images: a });
 
   }
@@ -49,9 +50,15 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Nav /> 
-              
-        <Main images={this.state.images} onImageClick={this.handleImageClick} />
+        <Nav />
+
+        <Header />
+
+    
+          <Main images={this.state.images} onImageClick={this.handleImageClick} />
+
+
+        <Footer />
       </div>
     );
   }

@@ -1,27 +1,16 @@
 import React from "react";
 import "./nav.css";
 
+
 const Nav = props => (
-  <div className="Navbar">
-    <nav
-      className="navbar navbar-light bg-light"
-      style={{
-        display: 'flex',
-        justifyContent: 'space-between',
-        padding: '0 50px',
-      }}
-    >
-      <p>
-        Clicky Game
-      </p>
-      <p>
-        Click an image to start!
-      </p>
-      <p>
-        Score: 0
-      </p>
-     </nav>
-  </div>
+  <nav className="navbar navbar-light">
+    <a className="navbar-brand mb-0 h1 text-light">Clicky Game</a>
+    <span className="text-center mb-0 h3">{props.message}</span>
+    <span className="navbar-text text-light font-weight-bold">
+      Score: <span>{props.currentScore}</span>&nbsp;
+      Top Score: <span>{props.topscore}</span>
+    </span>
+  </nav>
 );
     
 export default Nav;

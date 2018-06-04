@@ -1,28 +1,23 @@
 import React from "react";
 import "./footer.css";
 
-const Footer = props => (
-  <div className="card">
-    <div className="img-container">
-      <img
-        alt={props.name}
-        src={props.image}
-      />
-    </div>
-    <div className="content">
-      <ul>
-        <li>
-          <strong>Name:</strong> {props.name}
-        </li>
-        <li>
-          <strong>Occupation:</strong> {props.occupation}
-        </li>
-        <li>
-          <strong>Location:</strong> {props.location}
-        </li>
-      </ul>
-    </div>
+const Footer = () => (
+
+  <footer className="footer">
+
+  <div className="container-fluid text-muted text-center">
+
+      <a href="https://www.linkedin.com/in/christianlopes1" target="_blank">
+          <i className="fa fa-linkedin"></i></a>
+
+      <a href="https://github.com/CLopes1" target="_blank">
+          <i className="fa fa-github-square" aria-hidden="true"></i></a>
+
+      <a href="https://stackexchange.com/users/12635274/christian-lopes" target="_blank">
+          <i className="fa fa-stack-overflow" aria-hidden="true"></i></a>
   </div>
-);
+</footer>
+  
+  )
 
 export default Footer;

@@ -15,8 +15,8 @@ console.log('images', images);
   class App extends Component {
     state = {
       clicked: [],
-      currebntScore: 0,
-      topscore: 0,
+      currentScore: 0,
+      topScore: 0,
       message: 'Click an image to begin',
       images
     };
@@ -24,7 +24,7 @@ console.log('images', images);
 
 
   handleImageClick = (id) => {
-    // console.log('id', id);
+    console.log('id', id);
     this.shuffleImages();
 
     // TODO: check if id has been clicked (handle win/lose)
@@ -55,7 +55,11 @@ console.log('images', images);
   render() {
     return (
       <div className="App">
-        <Nav />
+        <Nav 
+        currentScore={this.state.currentScore}
+        topScore={this.state.topScore}
+        message={this.state.message}
+        />
 
         <Header />
 

@@ -8,7 +8,7 @@ const Nav = props => (
     <span className="text-center mb-0 h3">{props.message}</span>
     <span className="navbar-text text-light font-weight-bold">
       Score: <span>{props.currentScore}</span>&nbsp;
-      Top Score: <span>{props.topscore}</span>
+      Top Score: <span>{props.topScore}</span>
     </span>
   </nav>
 );

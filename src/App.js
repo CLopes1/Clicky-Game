@@ -27,17 +27,28 @@ console.log('images', images);
     console.log('id', id);
     this.shuffleImages();
 
+    //each time you click an image, push that id's image to the clicked array. 
+    this.state.clicked.push(id)
+
+    console.log(this.state.clicked)
+
+    
+
     // TODO: check if id has been clicked (handle win/lose)
 
     // TODO: update score
 
   } 
 
+
+
+
+
   shuffleImages = () => {
 
     let a = this.state.images;
 
-    console.log("this.state.images is equal to" + a)
+    // console.log("this.state.images is equal to" + a)
 
     // shuffle
     var j, x, i;
@@ -56,20 +67,17 @@ console.log('images', images);
     return (
       <div className="App">
         <Nav 
-        currentScore={this.state.currentScore}
-        topScore={this.state.topScore}
-        message={this.state.message}
+         currentScore={this.state.currentScore}
+         topScore={this.state.topScore}
+         message={this.state.message}
         />
 
         <Header />
-
-    
         <Main 
-            images={this.state.images} 
-            onImageClick={this.handleImageClick} 
-            handleIncrement={this.handleIncrement}
+          images={this.state.images} 
+          onImageClick={this.handleImageClick} 
+          handleIncrement={this.handleIncrement}
         />
-
         <Footer />
       </div>
     );

@@ -4,34 +4,18 @@ import "./main.css";
 const Main = props => (
 
   <div className="container">
+    <div className="row">
     {props.images.map(image => (
-      <div
-        onClick={() => {
-          props.onImageClick(image.id);
-        }}
-      >
-            <div className="album py-5 mx-auto d-block">
-              <div className="container">
-                <div className="row">
-                  <div className="col-md-4">
-                    <div>
-                      <button href="#">
-                        <img
-                          src={image.image}
-                          alt={image.name}
-                          height="200px"
-                          width="100%"
-                        />
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-         
-      </div>
-    ))}
-
+        <img
+          key={image.name}
+          src={image.image}
+          alt={image.name}
+          height="200px"
+          width="200px"
+          onClick={() => props.onImageClick(image.id)}
+        />
+      ))}
+    </div>
   </div>
 );
 
